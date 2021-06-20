@@ -51,10 +51,10 @@ const getInfo = async(event) => {
             } else if(tempStatus == "Snow") {
                 temp_status.innerHTML = "<i class = 'far fa-snowflake' style = color'a0e3f6'</i>"
             }
-            else if( (tempStatus == "Mist" || tempStatus == "Drizzle" || tempStatus == "Haze") && (stamp >= set || stamp <= rise )) {
+            else if( (tempStatus == "Mist" || tempStatus == "Drizzle" || tempStatus == "Haze" || tempStatus == "Dust") && (stamp >= set || stamp <= rise )) {
                 temp_status.innerHTML =
                     "<i class='fas fa-cloud-moon' ></i>";
-            }else if(tempStatus == "Mist" || tempStatus == "Drizzle" || tempStatus == "Haze"){
+            }else if(tempStatus == "Mist" || tempStatus == "Drizzle" || tempStatus == "Haze" || tempStatus == "Dust"){
                 temp_status.innerHTML =
                     "<i class='fas fa-cloud-sun' ></i>";
 
