@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+</head>
+
+<body>
+
+{{>navbar}}
+    <!-----------  main header ------>
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!--left side div-->
+                    <div class="col-md-12 col-12 main_header_right align-items-center pg404">
+                        <figure class="errimg">
+                        <img src="images/404.png" alt="Saransh Gautam" class="img-fluid errorClass" title="404 error">
+
+                        </figure>
+                    
+                        <p>Welcome to Sammy Weather World!!!</p>
+
+                        <h1>{{errorMsg}}</h1>
+                        <a href="/" ><button class="errBtn">Go Back</button></a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----- footer code ----->
+
+    {{>footer}}
+
+</body>
+
+</html>
